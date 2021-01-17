@@ -51,6 +51,7 @@ module.exports = appInfo => {
   }
   config.cors = {
     origin:'*',
+    credentials:true, // 允许cookie跨域
     allowMethods:'GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS'
   }
 
