@@ -6,7 +6,7 @@
  * @param {Egg.EggAppInfo} appInfo app info
  */
 module.exports = appInfo => {
-  /**
+  /** 
    * built-in config
    * @type {Egg.EggAppConfig}
    **/
@@ -47,11 +47,11 @@ module.exports = appInfo => {
     csrf:{
       enable:false
     },
-    domainWhiteList:['*']
+    domainWhiteList:['http://localhost:3000','http://localhost:3001','http://127.0.0.1:3000','http://127.0.0.1:3001']
   }
   config.cors = {
-    origin:'*',
-    credentials:true, // 允许cookie跨域
+    // origin:'http://localhost:3000',
+    credentials:true, //
     allowMethods:'GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS'
   }
 
